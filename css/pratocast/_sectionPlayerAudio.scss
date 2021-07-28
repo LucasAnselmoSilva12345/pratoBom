@@ -1,0 +1,351 @@
+.main {
+  margin: 80px auto;
+  position: relative;
+  height: 90%;
+  width: 90%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background: #147447;
+
+  button {
+    padding: 10px 12px;
+    margin: 0 10px;
+  }
+
+  #logo {
+    position: absolute;
+    top: 10px;
+    left: 30px;
+    font: 400 2rem 'Poppins', sans-serif;
+    color: #ccc;
+    i {
+      margin-right: 15px;
+    }
+  }
+
+  .right,
+  .left {
+    position: relative;
+    height: 100%;
+    width: 50%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  .left {
+    img {
+      height: 300px;
+      width: 80%;
+      border-radius: 15px;
+      box-shadow: 1px 0px 20px 12px rgba(240, 240, 240, 0.2);
+    }
+    .volume {
+      position: absolute;
+      bottom: 10%;
+      left: 0;
+      width: 100%;
+      height: 30px;
+
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      color: #fff;
+
+      p {
+        font: 400 1rem 'Nunito', sans-serif;
+      }
+
+      i {
+        cursor: pointer;
+        padding: 8px 12px;
+        background: #224918;
+        &:hover {
+          background: rgba(245, 245, 245, 0.1);
+        }
+      }
+      #volume_show {
+        padding: 8px 12px;
+        margin: 0 5px 0 0;
+        background: rgba(245, 245, 245, 0.1);
+      }
+    }
+  }
+
+  .right {
+    .show_song_no {
+      position: absolute;
+      top: 15px;
+      right: 10px;
+      width: 30px;
+      height: 20px;
+
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      padding: 15px 20px;
+
+      color: #fff;
+
+      border-radius: 5px;
+      background: rgba(255, 255, 255, 0.2);
+
+      p {
+        &:nth-child(2) {
+          margin: 0 5px;
+        }
+      }
+      #present {
+        font: 400 1rem 'Poppins', sans-serif;
+      }
+      #total {
+        font: 400 1rem 'Poppins', sans-serif;
+      }
+    }
+    .middle {
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      button {
+        border: none;
+        height: 70px;
+        width: 70px;
+        border-radius: 50%;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        cursor: pointer;
+        outline: none;
+        transition: 0.5s;
+        background: rgba(245, 245, 245, 0.1);
+      }
+      #play {
+        background: #224918;
+      }
+    }
+    #title {
+      position: absolute;
+      top: 60px;
+      left: 50%;
+      text-align: center;
+      transform: translateX(-50%);
+      text-transform: capitalize;
+      color: #fff;
+      font: 700 1.5rem 'Poppins', sans-serif;
+    }
+    #artist {
+      position: absolute;
+      top: 170px;
+      left: 50%;
+      transform: translateX(-50%);
+      text-transform: capitalize;
+      color: #fff;
+      font: 400 1rem 'Nunito', sans-serif;
+    }
+    .duration {
+      position: absolute;
+      bottom: 20%;
+      left: 50%;
+      transform: translateX(-50%);
+
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      width: 100%;
+      height: 20px;
+      margin-top: 40px;
+      p {
+        color: #fff;
+        font: 400 1rem 'Nunito', sans-serif;
+        margin-left: 20px;
+      }
+    }
+    #auto {
+      font: 400 1rem 'Poppins', sans-serif;
+      cursor: pointer;
+      margin-top: 45px;
+      border: none;
+      padding: 10px 14px;
+      color: #fff;
+      background: rgba(255, 255, 255, 0.2);
+      outline: none;
+      border-radius: 10px;
+      i {
+        margin-left: 8px;
+      }
+    }
+    button {
+      &:hover {
+        background: #224918;
+      }
+    }
+    i {
+      &::before {
+        color: #fff;
+        font-size: 20px;
+      }
+    }
+  }
+
+  input[type='range'] {
+    -webkit-appearance: none;
+    width: 50%;
+    outline: none;
+    height: 2px;
+    margin: 0 15px;
+    &::-webkit-slider-thumb {
+      -webkit-appearance: none;
+      height: 20px;
+      width: 20px;
+      background: #224918;
+      border-radius: 50%;
+      cursor: pointer;
+    }
+  }
+
+  .right input[type='range'] {
+    width: 40%;
+  }
+}
+
+@media (max-width: 991px) {
+  .main {
+    flex-direction: column;
+    #logo {
+      display: none;
+    }
+    .right,
+    .left {
+      height: 50%;
+      width: 100%;
+      flex-direction: column;
+    }
+    .left {
+      img {
+        display: none;
+      }
+      .volume {
+        position: absolute;
+        bottom: -110%;
+        left: 0;
+        width: 100%;
+        height: 100px;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        color: #fff;
+
+        p {
+          font: 400 1rem 'Nunito', sans-serif;
+        }
+
+        i {
+          cursor: pointer;
+          padding: 8px 12px;
+          background: #224918;
+          &:hover {
+            background: rgba(245, 245, 245, 0.1);
+          }
+        }
+        #volume_show {
+          padding: 8px 12px;
+          margin: 0 5px 0 0;
+          background: rgba(245, 245, 245, 0.1);
+        }
+      }
+    }
+    .right {
+      .show_song_no {
+        margin: -300px auto;
+      }
+      .middle {
+        margin-top: -300px;
+      }
+      #title {
+        top: -250px;
+      }
+      #artist {
+        top: 150px;
+      }
+    }
+  }
+}
+
+@media (max-width: 700px) {
+  .main {
+    flex-direction: column;
+    #logo {
+      display: none;
+    }
+    .right,
+    .left {
+      height: 70%;
+      width: 100%;
+      flex-direction: column;
+    }
+    .left {
+      img {
+        display: none;
+      }
+      .volume {
+        position: absolute;
+        bottom: -110%;
+        left: 0;
+        width: 100%;
+        height: 100px;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        color: #fff;
+
+        p {
+          font: 400 1rem 'Nunito', sans-serif;
+        }
+
+        i {
+          cursor: pointer;
+          padding: 8px 12px;
+          background: #224918;
+          &:hover {
+            background: rgba(245, 245, 245, 0.1);
+          }
+        }
+        #volume_show {
+          padding: 8px 12px;
+          margin: 0 5px 0 0;
+          background: rgba(245, 245, 245, 0.1);
+        }
+      }
+    }
+    .right {
+      .show_song_no {
+        margin: -300px auto;
+      }
+      .middle {
+        margin-top: -250px;
+      }
+      #title {
+        top: -250px;
+      }
+      #artist {
+        top: 180px;
+      }
+    }
+  }
+}
