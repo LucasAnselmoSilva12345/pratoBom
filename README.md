@@ -1,8 +1,8 @@
 <h1 text-align="center">Prato Bom 🍲</h1>
 
-<p>O Prato Bom é um site onde as pessoas que acessam nosso site, tem como objetivo apreender sobre o bom uso dos alimentos e de como se alimentar de forma saudável e correta.</p>
+<p>O Prato Bom é um site onde as pessoas que acessam o site, na intenção de apreender sobre o bom uso dos alimentos e de como se alimentar de forma saudável e correta.</p>
 
-<p>Nosso principal método de ensinar sobre a boa alimentação, é através do nosso programa em formato de PodCasta, chamado "PratoCast", onde a Rita Lobo e o professor Carlos Monteiro, ensinam os princípios que garantem uma alimentação saudável de verdade.</p>
+<p>Nosso principal método de ensinar sobre a boa alimentação, é através do nosso programa em formato de PodCast, chamado "PratoCast", onde a Rita Lobo e o professor Carlos Monteiro, ensinam os princípios que garantem uma alimentação saudável de verdade.</p>
 
 ## Sobre o Site 💻
 
