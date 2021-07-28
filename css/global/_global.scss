@@ -1,0 +1,74 @@
+// Colors
+$aside_bg: #c4b92c;
+$color_white: #fff;
+$color_white_medium: #f8f8f8;
+$color_gray: #a8a8b3;
+$color_red: #ea4335;
+
+$pageImageClip_bg: #fff;
+$containerClip: #ececf7;
+$containerClip_text_h4: #444;
+
+$pageSobre: #c9c60c;
+$pageSobreInfo_p: #7c7c7c;
+
+$pageCards: #fff;
+
+$footer_bg: #27333f;
+$sec_text_h2_color: #fff;
+$sec_text_h2_before_color: #ffeb3b;
+$sec_text_p_color: #fff;
+$sci_li_a_bg: #9198b8;
+$quicklinks_li_a_color: #fff;
+$podcaster_text_p_color: #fff;
+$podcaster_text_a_color: #fff;
+
+$copyright_bg: #1d242c;
+$copyright_text_p_color: #fff;
+$copyright_text_span_color: #f8f8f8;
+
+$box_logo_color: #111;
+$box_ul_li_a_color: #bdbdbd;
+$box_ul_li_a_hover_color: #333;
+$content_contentBox_h4_color: #333;
+$content_contentBox_p_color: #777;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+body {
+  height: 100vh;
+  width: 100%;
+
+  background: #f8f8f8;
+  color: #29292e;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #c2c1c1;
+}
