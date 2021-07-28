@@ -1,0 +1,28 @@
+.copyrightText {
+  padding: 10px 0;
+  text-align: center;
+  background: $copyright_bg;
+  p {
+    color: $copyright_text_p_color;
+    font: 400 1rem 'Nunito', sans-serif;
+    span {
+      color: $copyright_text_span_color;
+      font: 700 1rem 'Poppins', sans-serif;
+    }
+  }
+}
+
+@media (max-width: 991px) {
+  .copyrightText {
+    padding: 15px 40px;
+    p {
+      display: flex;
+      flex-direction: column;
+      span {
+        color: $copyright_text_span_color;
+
+        font: 700 1rem 'Poppins', sans-serif;
+      }
+    }
+  }
+}
