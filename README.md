@@ -21,7 +21,7 @@
 
 ## Acesse o site 🖥️
 
-<a href="google.com">Google</a>
+<a href="https://suspicious-bell-5f1c8f.netlify.app/">Prato Bom</a>
 
 ### Detalhes da Aplicação 💾
 
@@ -49,7 +49,7 @@
 
 - Imagens > Todas as imagens são de repositórios gratuitos, e se localizam em pastas com titulo 'assets'
 
-### Imagem do inicio da aplicação 🖨️
+### Imagem do início da aplicação 🖨️
 
 <p width="100%">
   <a data-flickr-embed="true" href="https://www.flickr.com/photos/190690980@N06/51338623002/in/dateposted-public/" title="section_1"><img src="https://live.staticflickr.com/65535/51338623002_5258c87637_b.jpg" width="1024" height="495" alt="section_1"></a>
