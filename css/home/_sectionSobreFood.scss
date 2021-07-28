@@ -1,0 +1,71 @@
+.introducao {
+  font: 700 2.625rem 'Poppins', sans-serif;
+  line-height: 1;
+
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 60px 10px;
+
+  text-align: center;
+}
+
+#sobre {
+  border-top: 2px solid $pageSobre;
+
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 60px 0;
+
+  display: flex;
+  flex-wrap: wrap;
+
+  .sobre-info {
+    flex: 2 1 300px;
+    margin: 0 10px;
+
+    h2 {
+      font: 400 2.5rem 'Poppins', sans-serif;
+      margin-bottom: 0.5rem;
+    }
+    p {
+      font: 400 1.25rem 'Nunito', sans-serif;
+      line-height: 1.4;
+      margin-bottom: 1rem;
+      color: $pageSobreInfo_p;
+    }
+  }
+  .sobre-img {
+    flex: 1 1 160px;
+    margin: 0 10px;
+  }
+}
+
+@media (max-width: 991px) {
+  .introducao {
+    font: 700 2.25rem 'Poppins', sans-serif;
+  }
+
+  #sobre {
+    .sobre-info {
+      text-align: center;
+    }
+    .sobre-img {
+      display: none;
+    }
+  }
+}
+
+@media (max-width: 600px) {
+  .introducao {
+    font: 700 2.25rem 'Poppins', sans-serif;
+  }
+
+  #sobre {
+    .sobre-info {
+      text-align: center;
+    }
+    .sobre-img {
+      display: none;
+    }
+  }
+}
