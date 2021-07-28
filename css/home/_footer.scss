@@ -1,0 +1,143 @@
+footer {
+  display: grid;
+  justify-content: end;
+  align-content: flex-end;
+
+  position: relative;
+  margin-top: 100px;
+  width: 100%;
+  height: auto;
+  padding: 50px 100px;
+  background: $footer_bg;
+
+  .container-footer {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+    gap: 20px;
+
+    .sec {
+      h2 {
+        position: relative;
+        color: $sec_text_h2_color;
+        font: 700 1.875rem 'Poppins', sans-serif;
+        margin-bottom: 15px;
+
+        &::before {
+          content: '';
+          position: absolute;
+          bottom: -5px;
+          left: 0;
+          width: 50px;
+          height: 2px;
+          background: $sec_text_h2_before_color;
+        }
+      }
+      p {
+        color: $sec_text_p_color;
+        font: 400 1rem 'Nunito', sans-serif;
+      }
+      .sci {
+        margin-top: 20px;
+        display: grid;
+        grid-template-columns: repeat(4, 50px);
+        gap: 25px;
+        li a {
+          display: inline-block;
+          width: 36px;
+          height: 36px;
+          display: grid;
+          align-content: center;
+          justify-content: center;
+          transition: 400ms;
+          &:hover {
+            width: 42px;
+            height: 42px;
+            background: $sci_li_a_bg;
+          }
+          img {
+            width: 32px;
+            height: 32px;
+          }
+        }
+      }
+    }
+    .quicklinks {
+      li {
+        margin-bottom: 10px;
+      }
+      li a {
+        color: $quicklinks_li_a_color;
+        font: 400 1rem 'Nunito', sans-serif;
+
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+    }
+    .podcaster {
+      p {
+        color: $podcaster_text_p_color;
+        font: 400 1rem 'Nunito', sans-serif;
+        margin-bottom: 25px;
+      }
+      .a-podcaster {
+        height: 50px;
+        width: 100%;
+        border-radius: 8px;
+        font: 700 1.25rem 'Poppins', sans-serif;
+
+        background: $color_red;
+        color: $podcaster_text_a_color;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        cursor: pointer;
+        border: 0;
+
+        transition: filter 0.2s;
+
+        &:hover {
+          filter: brightness(0.9);
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 991px) {
+  footer {
+    .container-footer {
+      grid-template-columns: 1fr;
+      gap: 50px;
+
+      .sec {
+        h2 {
+          text-align: center;
+          margin-bottom: 35px;
+          &::before {
+            width: 100%;
+          }
+        }
+        p {
+          text-align: center;
+          color: $sec_text_p_color;
+          font: 400 1rem 'Nunito', sans-serif;
+          margin-bottom: 35px;
+        }
+        .sci {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+        }
+      }
+      .quicklinks {
+        li {
+          text-align: center;
+        }
+      }
+    }
+  }
+}
