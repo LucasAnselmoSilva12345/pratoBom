@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600&family=Poppins:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="../css/pratocast/custom.css" />
+    <link rel="shortcut icon" href="../assets/home/logo.png" />
+    <title>PratoCast | 😋</title>
+  </head>
+  <body>
+    <div class="banner">
+      <div class="box content">
+        <header>
+          <a href="#" class="logo">PratoCast</a>
+          <ul>
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="https://youtube.com">YouTube</a></li>
+          </ul>
+        </header>
+        <div class="contentBox">
+          <h4>Apreenda, Construa e Invista em alimentação</h4>
+          <p>
+            acompanhe a gente em nosso podcast sobre os bons hábitos da
+            alimentação!!
+          </p>
+        </div>
+      </div>
+      <div class="box images">
+        <div class="imgBx">
+          <img src="assets/home/img1.jpg" alt="Imagem Home" />
+        </div>
+        <div class="imgBx">
+          <img src="assets/home/img2.jpg" alt="Imagem Home" />
+        </div>
+        <div class="imgBx">
+          <img src="assets/home/img3.jpg" alt="Imagem Home" />
+        </div>
+      </div>
+    </div>
+
+    <div class="main">
+      <p id="logo"><i class="fa fa-music" aria-hidden="true"></i></p>
+
+      <!--- left part -->
+      <div class="left">
+        <!-- song image -->
+        <img id="track_image" />
+        <div class="volume">
+          <p id="volume_show">50</p>
+          <i
+            class="fa fa-volume-up"
+            aria-hidden="true"
+            id="volume_icon"
+            onclick="mute_sound()"
+          ></i>
+          <input
+            type="range"
+            min="0"
+            max="100"
+            value="50"
+            onchange="volume_change()"
+            id="volume"
+          />
+        </div>
+      </div>
+
+      <!-- right part -->
+      <div class="right">
+        <div class="show_song_no">
+          <p id="present">1</p>
+          <p>/</p>
+          <p id="total">5</p>
+        </div>
+
+        <!-- song title -->
+        <p id="title">title.mp3</p>
+        <p id="artist">Artist name</p>
+
+        <!-- middle part -->
+        <div class="middle">
+          <button onclick="previous_song()" id="pre">
+            <i class="fa fa-step-backward" aria-hidden="true"></i>
+          </button>
+
+          <button onclick="justplay()" id="play">
+            <i class="fa fa-play" aria-hidden="true"></i>
+          </button>
+
+          <button onclick="next_song()" id="next">
+            <i class="fa fa-step-forward" aria-hidden="true"></i>
+          </button>
+        </div>
+
+        <!-- song duration part -->
+        <div class="duration">
+          <input
+            type="range"
+            min="0"
+            max="100"
+            value="0"
+            id="duration_slider"
+            onchange="change_duration()"
+          />
+        </div>
+        <button id="auto" onclick="autoplay_switch()">
+          Auto play <i class="fa fa-circle-o-notch" aria-hidden="true"></i>
+        </button>
+      </div>
+    </div>
+
+    <footer>
+      <div class="container-footer">
+        <div class="sec aboutus">
+          <h2>Sobre nós</h2>
+          <p>
+            Esse site foi feito com base na ideia de ensinar as pessoas sobre o
+            uso correto dos alimentos e de como obter uma alimentação saudável e
+            os benefícios.
+          </p>
+          <ul class="sci">
+            <li>
+              <a href="https://www.facebook.com/lucas.anselmomoraesdasilva/"
+                ><img
+                  src="../assets/social_media/facebook.png"
+                  alt="Ícone do Facebook"
+              /></a>
+            </li>
+            <li>
+              <a href="https://www.instagram.com/lucas_anselmo2025/"
+                ><img
+                  src="../assets/social_media/instagram.png"
+                  alt="Ícone do Instagram"
+              /></a>
+            </li>
+            <li>
+              <a href="https://twitter.com/LucasAnselmo202"
+                ><img
+                  src="../assets/social_media/twitter.png"
+                  alt="Ícone do Twitter"
+              /></a>
+            </li>
+            <li>
+              <a
+                href="https://www.linkedin.com/in/lucas-anselmo-moraes-da-silva-543636161/"
+                ><img
+                  src="../assets/social_media/linkedin.png"
+                  alt="Ícone do LinkedIn"
+              /></a>
+            </li>
+          </ul>
+        </div>
+        <div class="sec quicklinks">
+          <h2>Nossas páginas</h2>
+          <ul>
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="./pratocast.html">PratoCast</a></li>
+          </ul>
+        </div>
+        <div class="sec podcaster">
+          <h2>PratoCast</h2>
+          <p>Escute nosso podcast sobre alimentação saudável</p>
+          <a class="a-podcaster" href="pratocast/pratocast.html">PratoCast</a>
+        </div>
+      </div>
+    </footer>
+    <div class="copyrightText">
+      <p>
+        <span>Copyright ©️ 2021 Lucas Anselmo Moraes Da Silva.</span> Todos os
+        Direitos Reservados
+      </p>
+    </div>
+
+    <script src="./data.js"></script>
+  </body>
+</html>
