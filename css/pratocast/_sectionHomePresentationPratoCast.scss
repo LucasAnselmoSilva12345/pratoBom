@@ -1,0 +1,116 @@
+.banner {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+
+  .box {
+    position: relative;
+    height: 100vh;
+
+    header {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      padding: 20px 60px;
+
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      .logo {
+        position: relative;
+        font: 700 1.4rem 'Poppins', sans-serif;
+        color: $box_logo_color;
+      }
+      ul {
+        display: flex;
+        li {
+          margin-left: 30px;
+          a {
+            font: 600 1rem 'Nunito', sans-serif;
+            color: $box_ul_li_a_color;
+            letter-spacing: 1px;
+            &:hover {
+              color: $box_ul_li_a_hover_color;
+            }
+          }
+        }
+      }
+    }
+  }
+  .content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: 60px;
+
+    .contentBox {
+      h4 {
+        font-size: 3rem;
+        color: $content_contentBox_h4_color;
+        margin-bottom: 16px;
+      }
+      p {
+        font: 400 1.5rem 'Nunito', sans-serif;
+        color: $content_contentBox_p_color;
+        line-height: 1.8rem;
+      }
+    }
+  }
+  .images {
+    display: flex;
+    flex-wrap: wrap;
+    .imgBx {
+      position: relative;
+      width: 50%;
+      height: 50vh;
+
+      &:nth-child(3) {
+        width: 100%;
+      }
+      img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+    }
+  }
+}
+
+@media (max-width: 991px) {
+  .banner {
+    grid-template-columns: 1fr;
+    .box {
+      header {
+        padding: 20px 40px;
+      }
+    }
+    .content {
+      padding: 40px;
+      height: 70vh;
+    }
+    .images {
+      height: auto;
+    }
+  }
+}
+
+@media (max-width: 600px) {
+  .content {
+    .contentBox {
+      h4 {
+        font-size: 3rem;
+      }
+    }
+  }
+  .images {
+    .imgBx {
+      width: 100%;
+      height: 40vh;
+    }
+  }
+}
