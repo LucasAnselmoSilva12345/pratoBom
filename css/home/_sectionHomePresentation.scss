@@ -1,0 +1,148 @@
+#page-presentation {
+  display: flex;
+  align-items: stretch;
+  height: 100vh;
+}
+
+aside {
+  flex: 7;
+
+  background: $aside_bg;
+  color: $color_white;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  padding: 120px 80px;
+
+  img {
+    max-width: 340px;
+    margin: 0 auto;
+  }
+
+  strong {
+    font: 700 2.25rem 'Poppins', sans-serif;
+    line-height: 42px;
+    margin-top: 16px;
+  }
+
+  p {
+    font-size: 1.25rem;
+    line-height: 32px;
+    margin-top: 16px;
+    color: $color_white_medium;
+  }
+}
+
+main {
+  flex: 8;
+
+  padding: 0 32px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  .main-content {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 320px;
+    align-items: stretch;
+    text-align: center;
+
+    h2 {
+      font: 600 3rem 'Nunito', sans-serif;
+    }
+
+    .separator {
+      font-size: 14px;
+      color: $color_gray;
+      margin: 32px 0;
+      display: flex;
+      align-items: center;
+
+      &::before {
+        content: '';
+        flex: 1;
+        height: 1px;
+        background: $color_gray;
+        margin-right: 16px;
+      }
+      &::after {
+        content: '';
+        flex: 1;
+        height: 1px;
+        background: $color_gray;
+        margin-left: 16px;
+      }
+    }
+    .a-content {
+      height: 50px;
+      width: 100%;
+      border-radius: 8px;
+      font: 700 1.25rem 'Poppins', sans-serif;
+
+      background: $color_red;
+      color: $color_white;
+
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      cursor: pointer;
+      border: 0;
+
+      transition: filter 0.2s;
+
+      &:hover {
+        filter: brightness(0.9);
+      }
+    }
+  }
+}
+
+@media (max-width: 991px) {
+  #page-presentation {
+    flex-direction: column;
+    margin-bottom: 500px;
+    aside {
+      flex: 1;
+      text-align: center;
+    }
+    main {
+      flex: 1;
+    }
+
+    .main-content {
+      margin-top: 100px;
+
+      h2 {
+        font: 600 3rem 'Nunito', sans-serif;
+      }
+    }
+  }
+}
+
+@media (max-width: 600px) {
+  #page-presentation {
+    flex-direction: column;
+    margin-bottom: 500px;
+    aside {
+      flex: 1;
+      text-align: center;
+    }
+    main {
+      flex: 1;
+    }
+
+    .main-content {
+      margin-top: 100px;
+
+      h2 {
+        font: 600 3rem 'Nunito', sans-serif;
+      }
+    }
+  }
+}
